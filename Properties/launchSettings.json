@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "WebApi": {
+    "PatikaAkbankBookstore": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
