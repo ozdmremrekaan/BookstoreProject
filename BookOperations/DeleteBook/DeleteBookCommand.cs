@@ -1,6 +1,6 @@
-using WebApi.DbOperations;
+using PatikaAkbankBookstore.DbOperations;
 
-namespace WebApi.BookOperations.DeleteBook
+namespace PatikaAkbankBookstore.BookOperations.DeleteBook
 {
     public class DeleteBookCommand
     {

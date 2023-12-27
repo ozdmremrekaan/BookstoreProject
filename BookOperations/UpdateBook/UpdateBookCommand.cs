@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
-using WebApi.DbOperations;
+using PatikaAkbankBookstore.Common;
+using PatikaAkbankBookstore.DbOperations;
 
-namespace WebApi.BookOperations.UpdateBook
+namespace PatikaAkbankBookstore.BookOperations.UpdateBook
 {
     public class UpdateBookCommand
     {

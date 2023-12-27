@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace WebApi.BookOperations.CrateBook
+namespace PatikaAkbankBookstore.BookOperations.CrateBook
 {
     public class CreateBookCommandValidator : AbstractValidator<CreateBookCommand>
     {

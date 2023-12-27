@@ -1,6 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using WebApi.DbOperations;
+using PatikaAkbankBookstore.DbOperations;
 
 
 var builder = WebApplication.CreateBuilder(args);

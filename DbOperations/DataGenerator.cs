@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.DbOperations
+namespace PatikaAkbankBookstore.DbOperations
 {
     public class DataGenerator
     {

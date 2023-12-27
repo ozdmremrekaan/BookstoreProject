@@ -1,9 +1,9 @@
 using AutoMapper;
-using WebApi.BookOperations.GetBookById;
-using WebApi.BookOperations.GetBooks;
-using static WebApi.BookOperations.CrateBook.CreateBookCommand;
+using PatikaAkbankBookstore.BookOperations.GetBookById;
+using PatikaAkbankBookstore.BookOperations.GetBooks;
+using static PatikaAkbankBookstore.BookOperations.CrateBook.CreateBookCommand;
 
-namespace WebApi.Common
+namespace PatikaAkbankBookstore.Common
 {
     public class MappingProfile : Profile
     {

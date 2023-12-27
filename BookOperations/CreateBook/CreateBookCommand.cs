@@ -1,9 +1,9 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
-using WebApi.DbOperations;
+using PatikaAkbankBookstore.Common;
+using PatikaAkbankBookstore.DbOperations;
 
-namespace WebApi.BookOperations.CrateBook
+namespace PatikaAkbankBookstore.BookOperations.CrateBook
 {
     public class CreateBookCommand
     {

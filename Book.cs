@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApi;
+namespace PatikaAkbankBookstore;
 
 public class Book
 {

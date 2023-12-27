@@ -1,16 +1,16 @@
 using AutoMapper;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.BookOperations.CrateBook;
-using WebApi.BookOperations.DeleteBook;
-using WebApi.BookOperations.GetBookById;
-using WebApi.BookOperations.GetBooks;
-using WebApi.BookOperations.UpdateBook;
-using WebApi.DbOperations;
-using static WebApi.BookOperations.CrateBook.CreateBookCommand;
-using static WebApi.BookOperations.UpdateBook.UpdateBookCommand;
+using PatikaAkbankBookstore.BookOperations.CrateBook;
+using PatikaAkbankBookstore.BookOperations.DeleteBook;
+using PatikaAkbankBookstore.BookOperations.GetBookById;
+using PatikaAkbankBookstore.BookOperations.GetBooks;
+using PatikaAkbankBookstore.BookOperations.UpdateBook;
+using PatikaAkbankBookstore.DbOperations;
+using static PatikaAkbankBookstore.BookOperations.CrateBook.CreateBookCommand;
+using static PatikaAkbankBookstore.BookOperations.UpdateBook.UpdateBookCommand;
 
-namespace WebApi.AddControllers
+namespace PatikaAkbankBookstore.AddControllers
 {
     [ApiController]
     [Route("[controller]")]

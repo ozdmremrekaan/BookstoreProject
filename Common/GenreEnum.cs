@@ -1,4 +1,4 @@
-namespace WebApi.Common
+namespace PatikaAkbankBookstore.Common
 {
     public enum GenreEnum
     {

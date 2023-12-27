@@ -1,9 +1,9 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Common;
-using WebApi.DbOperations;
+using PatikaAkbankBookstore.Common;
+using PatikaAkbankBookstore.DbOperations;
 
-namespace WebApi.BookOperations.GetBooks
+namespace PatikaAkbankBookstore.BookOperations.GetBooks
 {
     public class GetBooksQuery
     {
