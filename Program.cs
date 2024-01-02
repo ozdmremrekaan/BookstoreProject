@@ -1,6 +1,8 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using PatikaAkbankBookstore.DbOperations;
+using PatikaAkbankBookstore.Middlewares;
+using PatikaAkbankBookstore.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookStoreDbContext>(options=>options.UseInMemoryDatabase(databaseName:"BookStoreDB"));
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddSingleton<PatikaAkbankBookstore.Services.ILogger, ConsoleLogger>();
 
 
 var app = builder.Build();
@@ -33,6 +36,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCustomEsceptionMiddle();
 
 app.MapControllers();
 
