@@ -9,11 +9,11 @@ namespace PatikaAkbankBookstore.Application.BookOperations.Queries.GetBookById
     public class GetByIdCommand
     {
 
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
         public int bookId { get; set; }
 
-        public GetByIdCommand(BookStoreDbContext dbContext, IMapper mapper)
+        public GetByIdCommand(IBookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;

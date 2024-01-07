@@ -7,10 +7,10 @@ namespace PatikaAkbankBookstore.Application.AuthorOperations.Commands.CreateAuth
 {
     public class CreateAuthorCommand
     {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         public AuthorDto model { get; set; }
 
-        public CreateAuthorCommand(BookStoreDbContext dbContext) {
+        public CreateAuthorCommand(IBookStoreDbContext dbContext) {
             
             _dbContext = dbContext;
 
@@ -22,7 +22,7 @@ namespace PatikaAkbankBookstore.Application.AuthorOperations.Commands.CreateAuth
             if (author is not null)
             {
 
-                throw new InvalidOperationException("Kitap türü zaten Mevcut");
+                throw new InvalidOperationException("Bu yazar mevcut");
 
             }
             author = new Author();

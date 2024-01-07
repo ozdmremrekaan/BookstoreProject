@@ -7,10 +7,10 @@ namespace PatikaAkbankBookstore.Application.BookOperations.Commands.UpdateBook
     public class UpdateBookCommand
     {
         public UpdateBookModel Model { get; set; }
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
         public int bookId { get; set; }
-        public UpdateBookCommand(BookStoreDbContext dbContext)
+        public UpdateBookCommand(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

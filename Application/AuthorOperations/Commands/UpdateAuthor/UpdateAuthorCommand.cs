@@ -5,11 +5,11 @@ namespace PatikaAkbankBookstore.Application.AuthorOperations.Commands.UpdateAuth
 {
     public class UpdateAuthorCommand
     {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         public AuthorDto model { get; set; }
         public int AuthorId;
 
-        public UpdateAuthorCommand(BookStoreDbContext dbContext) {
+        public UpdateAuthorCommand(IBookStoreDbContext dbContext) {
 
             _dbContext = dbContext;
 

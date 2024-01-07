@@ -15,10 +15,10 @@ namespace PatikaAkbankBookstore.Controllers
     [ApiController]
     public class AuthorController : ControllerBase
     {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public AuthorController(BookStoreDbContext dbcontext, IMapper mapper)
+        public AuthorController(IBookStoreDbContext dbcontext, IMapper mapper)
         {
             _dbContext = dbcontext;
             _mapper = mapper;
@@ -69,7 +69,7 @@ namespace PatikaAkbankBookstore.Controllers
 
         [HttpDelete("{id}")]
         public IActionResult DeleteAuthor(int id)
-        {
+        {   
             DeleteAuthorCommand command = new DeleteAuthorCommand(_dbContext);
             command.AuthorId = id;
             

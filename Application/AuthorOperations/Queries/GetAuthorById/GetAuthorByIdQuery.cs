@@ -8,9 +8,9 @@ namespace PatikaAkbankBookstore.Application.AuthorOperations.Queries.GetAuthorsB
     public class GetAuthorByIdQuery
     {
         public int AuthorId { get; set; }
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
-        public GetAuthorByIdQuery(BookStoreDbContext dbContext, IMapper mapper)
+        public GetAuthorByIdQuery(IBookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;
@@ -23,7 +23,7 @@ namespace PatikaAkbankBookstore.Application.AuthorOperations.Queries.GetAuthorsB
             if (author == null)
             {
                 // Eğer yazar bulunamazsa, isteğe bağlı olarak hata kontrolü veya başka bir işlem yapabilirsiniz.
-                return null;
+                throw new InvalidOperationException("Yazar Bulunamadı");
             }
 
             // AutoMapper kullanarak Author entity'sini AuthorDto'ya dönüştürme
