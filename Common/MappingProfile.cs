@@ -6,6 +6,7 @@ using PatikaAkbankBookstore.Entities;
 using static PatikaAkbankBookstore.Application.BookOperations.Commands.CreateBook.CreateBookCommand;
 using static PatikaAkbankBookstore.Application.GenreOperations.Queries.GetGenreDetail.GetGenreDetailQuery;
 using static PatikaAkbankBookstore.Application.GenreOperations.Queries.GetGenres.GetGenresQuery;
+using static PatikaAkbankBookstore.Application.UserOperations.CreateUserCommand;
 
 
 namespace PatikaAkbankBookstore.Common
@@ -22,6 +23,7 @@ namespace PatikaAkbankBookstore.Common
             CreateMap<Genre, GenreViewModel>();
             CreateMap<Genre, GenreDetailViewModel>();
             CreateMap<Author, AuthorDto>();
+            CreateMap<CreateUserModel, User>();
         }
     }
 }
